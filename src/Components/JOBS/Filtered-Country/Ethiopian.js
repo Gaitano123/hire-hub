@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link, Element } from "react-scroll";
 
@@ -6,11 +6,23 @@ function Ethiopian({ jobs }){
     console.log(jobs)
 
     const navigate = useNavigate()
+    const [loading, setLoading] = useState(true);
+
 
     useEffect(() => {
         // Scroll to the top of the page when the component mounts
         window.scrollTo(0, 0);
+
+        setTimeout(() => {
+            setLoading(false);
+        }, 1500);
+
     }, []);
+
+    if (loading) {
+        // Display a loading message or spinner while data is being fetched
+        return <div className="text-center text-uppercase loading fs-1 fw-bolder">Loading<i class="fa-solid fa-spinner fa-spin-pulse"></i></div>;
+    }
 
     if (!Array.isArray(jobs)) {
         console.error("jobs is not an array:", jobs);

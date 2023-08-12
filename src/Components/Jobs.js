@@ -12,6 +12,7 @@ function Jobs(){
                 <h3 className="text-center text-uppercase fw-bolder fs-2">we empower your career dreams</h3>
             </div>
             <div className="d-flex flex-column mb-3 jbs_sctn_flgs">
+                <h3 className="text-uppercase text-center fw-bold fs-2">select a country</h3>
                 <div className="d-flex justify-content-evenly jbs_div_flgs">
                     <Ethiopia />
                     <Somalia />

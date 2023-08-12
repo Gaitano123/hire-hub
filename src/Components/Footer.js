@@ -25,10 +25,10 @@ function Footer(){
                             <div>
                                 <p className="text-uppercase">socials network</p>
                                 <div className="d-flex flex-row mb-3 d-flex justify-content-evenly">
-                                    <a className="ft_link" href="/"><i class="fa-brands fa-twitter"></i></a>
-                                    <a className="ft_link" href="/"><i class="fa-brands fa-instagram"></i></a>
-                                    <a className="ft_link" href="/"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a className="ft_link" href="/"><i class="fa-brands fa-youtube"></i></a>
+                                    <a className="ft_link" href="https://twitter.com/i/flow/login" target="blank"><i class="fa-brands fa-twitter"></i></a>
+                                    <a className="ft_link" href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a className="ft_link" href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a className="ft_link" href="https://www.youtube.com/" target="blank"><i class="fa-brands fa-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ function Footer(){
                     <h3 className="text-capitalize">our company</h3>
                     <div>
                         <ul>
-                            <li className="ft_list"><Link className="ft_link">ABOUT US</Link></li>
+                            <li className="ft_list"><Link className="ft_link" to="/about-us">ABOUT US</Link></li>
                             <li className="ft_list"><Link className="ft_link">CONTACT US</Link></li>
                         </ul>
                     </div>
